@@ -4,10 +4,10 @@ import Paysage from '../../assets/Paysage accueil.png'
 function Accueil() {
   return (
     <main>
-      <div>
-        <img src={Paysage} alt='Paysage' />
+      <div className='divAccueil'>
+        <img className='imageAccueil' src={Paysage} alt='Paysage' />
       </div>
-      <h1>Chez vous, partout et ailleurs</h1>
+      <h1 className='titreAccueil'>Chez vous, partout et ailleurs</h1>
     </main>
   )
 }

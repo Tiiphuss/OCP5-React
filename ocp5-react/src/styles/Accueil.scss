@@ -1,29 +1,29 @@
-$font-stack: Montserrat, sans-serif;
+$font-stack: "Montserrat", sans-serif;
 
 main {
     padding: 45px;
 }
 
-main img {
+.imageAccueil {
     width: 100%;
     height: 220px;
     filter: brightness(40%);
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
 
-main h1 {
+.titreAccueil {
     display: flex;
     justify-content: center;
     position: relative;
     color: white;
     bottom: 170px;
-    font: 200% Montserrat, sans-serif;
+    font: 200% $font-stack;
     text-shadow: 0px 2px 2px black;
     font-size: xxx-large;
 }
 
-main div {
+.divAccueil {
     display: flex;
     justify-content: center;
 }
