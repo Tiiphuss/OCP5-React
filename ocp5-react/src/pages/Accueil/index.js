@@ -6,12 +6,7 @@ import Card from '../../components/Card';
 function Accueil() {
   return (
     <main>
-      <Banner>
-        <div>
-            <img className='imageAccueil' src={Paysage} alt='Paysage'></img>
-        </div>
-        <h1 className='titreAccueil'>Chez vous, partout et ailleurs</h1>
-      </Banner>
+      <Banner title="Chez vous, partout et ailleurs" src={Paysage} classname={'imageAccueil'} />
       <Card />
     </main>
   )

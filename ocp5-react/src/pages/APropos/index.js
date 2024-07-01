@@ -1,13 +1,13 @@
 import Paysage from '../../assets/Paysage APropos.png'
 import '../../styles/APropos.scss'
 import Banner from '../../components/Banner'
+import Collapse from '../../components/Collapse'
 
 function APropos() {
     return (
         <main>
-            <Banner>
-                <img className='imageApropos' src={Paysage} alt='Paysage' />
-            </Banner>
+            <Banner src={Paysage} title="" classname={"imageApropos"}/>
+            <Collapse />
         </main>    
     )
 }
