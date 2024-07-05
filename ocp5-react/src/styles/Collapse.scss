@@ -10,6 +10,11 @@
     transition-property: transform;
     transition-duration: 0.5s;
     transform: rotate(0deg);
+    &:active .contenuCollapse {
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transform: translateY(20px);
+        }
 }
 
 .btnCollapseO {
@@ -37,4 +42,16 @@
     height: 45px;
     border: transparent;
     border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contenuCollapse{
+    width: 65%;
+    margin-left: 205px;
+    background-color: #F6F6F6;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
