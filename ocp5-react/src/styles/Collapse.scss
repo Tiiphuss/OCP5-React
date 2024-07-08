@@ -23,7 +23,7 @@
     margin-right: 15px;
     transition-property: transform;
     transition-duration: 0.5s;
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 
 .divCollapse p {
@@ -47,7 +47,7 @@
 
 .contenuCollapse{
     width: 65%;
-    margin-left: 205px;
+    margin-left: 305px;
     background-color: #F6F6F6;
     padding-top: 1px;
     padding-bottom: 1px;
