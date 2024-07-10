@@ -1,6 +1,11 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 .orga {
-    display: flex;
-    justify-content: center;
+   width: 66%;
+   margin-bottom: 20px;
 }
 
 .btnCollapse {
@@ -10,11 +15,6 @@
     transition-property: transform;
     transition-duration: 0.5s;
     transform: rotate(0deg);
-    &:active .contenuCollapse {
-        transition-property: transform;
-        transition-duration: 0.5s;
-        transform: translateY(20px);
-        }
 }
 
 .btnCollapseO {
@@ -26,7 +26,7 @@
     transform: rotate(-180deg);
 }
 
-.divCollapse p {
+.divCollapseTXT {
     font-size: 22px;
     font-weight: 700;
     margin-left: 15px;
@@ -38,20 +38,20 @@
     align-items: center;
     background-color: #FF6060;
     color: white;
-    width: 66%;
     height: 45px;
     border: transparent;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 .contenuCollapse{
-    width: 65%;
-    margin-left: 305px;
-    background-color: #F6F6F6;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 10px;
-    margin-top: -20px;
-    margin-bottom: 20px;
+   background-color: #F6F6F6;
+   padding-top: 1px;
+   padding-bottom: 1px;
+   padding-left: 15px;
+   animation: fadeIn 1s;
+}
+
+.affichage {
+    display: flex;
+    justify-content: center;
 }

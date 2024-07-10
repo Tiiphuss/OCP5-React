@@ -6,24 +6,30 @@ function Collapse({ titre, contenu }) {
     const [isOpen, setIsOpen] = useState(false)
     return isOpen ? (
         <>
-            <div className='orga'>
-                <div className='divCollapse'>
-                    <p className='texteCollapse'>{titre}</p> 
-                    <button onClick={() => setIsOpen(false)} className='btnCollapseO'> <img src={Vector} alt='Flèche'></img> </button>
+            <div className='affichage'>
+                <div className='orga'>
+                    <div className='divCollapse'>
+                        <p className='divCollapseTXT'>{titre}</p> 
+                        <button onClick={() => setIsOpen(false)} className='btnCollapseO'> <img src={Vector} alt='Flèche'></img> </button>
+                    </div>
+                
+                    <div className='contenuCollapse'>
+                        {isOpen && <p>{contenu}</p>}
+                    </div> 
                 </div>
             </div>    
-            <div className='contenuCollapse'>
-                {isOpen && <p>{contenu}</p>}
-            </div>                
+                           
         </>
 
         
     ) :
     (
-        <div className='orga'> 
-            <div className='divCollapse'>
-                <p>{titre}</p>    
-                <button onClick={() => setIsOpen(true)} className='btnCollapse'> <img src={Vector} alt='Flèche'></img> </button>
+        <div className='affichage'>
+            <div className='orga'> 
+                <div className='divCollapse'>
+                    <p className='divCollapseTXT'>{titre}</p>    
+                    <button onClick={() => setIsOpen(true)} className='btnCollapse'> <img src={Vector} alt='Flèche'></img> </button>
+                </div>
             </div>
         </div>        
     )
