@@ -1,15 +1,16 @@
 import { Logements } from "../../datas/logements.js"
 import '../../styles/Card.scss'
+import { NavLink } from "react-router-dom"
 
 function Card() {
     return (    
     <div className="Gallery">
-        {Logements.map((Logements) => (
-                <div key={Logements.id} className="Card">
-                    <a href={"/fichelogement"}>
-                        <img src={Logements.cover} alt={Logements.title}></img> 
-                    </a>
-                        <p>{Logements.title}</p>
+        {Logements.map((logement) => (
+                <div key={logement.id} className="Card">
+                    <NavLink to={`/fichelogement/${logement.id}`}>
+                        <img src={logement.cover} alt={logement.title}></img> 
+                    </NavLink>
+                        <p>{logement.title}</p>
                 </div>
         ))}
     </div>

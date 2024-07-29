@@ -1,3 +1,5 @@
+$font-stack: "Montserrat", sans-serif;
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -50,6 +52,8 @@
    padding-left: 15px;
    padding-right: 15px;
    animation: fadeIn 1s;
+   border-radius: 0px 0px 5px 5px;
+   font: 100% $font-stack;
 }
 
 .affichage {
