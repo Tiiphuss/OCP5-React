@@ -18,16 +18,14 @@ function Slideshow({imgLogement}) {
 
     return nonUnique? (
         <>
-        <main>
             <img className="photo" src={imgLogement[currentSlide]} alt="slideshow images"></img>
             <button className="flecheGauche" onClick={() => updateSlide(prevSlide)}> <img src={Fleche_gauche} alt="flèche gauche"></img> </button>
             <button className="flecheDroite" onClick={() => updateSlide(nextSlide)}> <img src={Fleche_gauche} alt="flèche droite"></img> </button>
             <p className="numero">{currentSlide + 1} / {imgLogement.length} </p>
-        </main>         
+                 
         </>
-    ) : <main>
-            <img src={imgLogement[currentSlide]} alt="slideshow images"></img>
-        </main>
+    ) : <img src={imgLogement[currentSlide]} alt="slideshow images"></img>
+    
 }
 
 export default Slideshow
