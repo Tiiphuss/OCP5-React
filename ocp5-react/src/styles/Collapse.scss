@@ -51,8 +51,11 @@ $font-stack: "Montserrat", sans-serif;
    padding-bottom: 1px;
    padding-left: 15px;
    padding-right: 15px;
-   animation: fadeIn 1s;
    border-radius: 0px 0px 5px 5px;
    font: 100% $font-stack;
+}
+
+.contenuCollapse p {
+    animation: fadeIn 1s;
 }
 

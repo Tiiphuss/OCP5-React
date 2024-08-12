@@ -3,25 +3,26 @@ main {
 }
 
 .flecheGauche {
-    position: relative;
-    bottom: 350px;
+    position: absolute;
+    bottom: 40%;
+    left: 0px;
     background-color: transparent;
     border: transparent;
 }
 
 .flecheDroite {
     transform: rotate(180deg);
-    position: relative;
-    bottom: 350px;
-    left: 1672px;
+    position: absolute;
+    bottom: 40%;
+    right: 0px;
     background-color: transparent;
     border: transparent;
 }
 
 .numero {
-    position: relative;
-    bottom: 150px;
-    left: 900px;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
     color: white;
     font-weight: 700;
     font-size: large;
@@ -32,4 +33,8 @@ main {
     height: 600px;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.slideshow {
+    position: relative;
 }

@@ -1,17 +1,22 @@
-import { useParams } from "react-router-dom"
+import {useParams } from "react-router-dom"
 import Slideshow from "../../components/Slideshow"
 import Collapse from "../../components/Collapse"
 import { Logements } from "../../datas/logements.js"
 import { useState } from "react"
 import "../../styles/FicheLogement.scss"
+import { Navigate } from "react-router-dom"
 
 function FicheLogement() {
-    const {id} = useParams()
-    console.log(id)
+    
+    const {id} = useParams();
+    console.log(id);
     const currentLogement = Logements.find((logement) => logement.id === id);
+
+    if (currentLogement.id !== id) {<Navigate to="/404"/>}
+    
     const equip = 
     currentLogement.equipments.map((equipement) =>
-        <li>{equipement}</li>
+        <li key={equipement}>{equipement}</li>
     );
 
      // <ul>
@@ -26,6 +31,10 @@ function FicheLogement() {
         //<li>{currentLogement.equipments[8]}</li>
         //<li>{currentLogement.equipments[9]}</li>
     //</ul>
+    console.log(id);
+    console.log(currentLogement.id);
+    
+    
     
     return(
         <>
@@ -33,7 +42,7 @@ function FicheLogement() {
             <Slideshow imgLogement={currentLogement.pictures}/>
             <div className="collapses">
                 <div className="collapseDescription"> <Collapse titre="Description" contenu={currentLogement.description} /> </div>
-                <div className="collapseEquipements"> <Collapse titre="Equipements" contenu={<ul> {equip} </ul>} /> </div>
+                <div className="collapseEquipements"> <Collapse titre="Equipements" contenu={equip} /> </div>
             </div>
         </main>  
         </>
