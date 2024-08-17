@@ -7,7 +7,6 @@ function Slideshow({imgLogement}) {
     const prevSlide = currentSlide - 1;
     const nextSlide = currentSlide + 1;
     const nonUnique = imgLogement.length > 1
-    console.log(imgLogement.length)
     
     if (currentSlide === imgLogement.length) {
         updateSlide(0)

@@ -9,7 +9,6 @@ function Collapse({ titre, contenu }) {
         setActive(!isActive);
     };
 
-    // return isOpen ? (
     return (
         
             <div className='affichage'>
@@ -25,18 +24,6 @@ function Collapse({ titre, contenu }) {
                 </div>
             </div>    
     )
-                              
-    //) :
-    // (
-        // <div className='affichage'>
-            // <div className='orga'> 
-                // <div className='divCollapse'>
-                    // <p className='divCollapseTXT'>{titre}</p>    
-                    // <button onClick={() => setIsOpen(true)} className='btnCollapse'> <img src={Vector} alt='Flèche'></img> </button>
-                // </div>
-            // </div>
-        // </div>        
-    // )
 }
 
 export default Collapse
