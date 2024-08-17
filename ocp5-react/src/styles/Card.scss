@@ -4,13 +4,13 @@
     justify-content: space-around;
     background-color: #F6F6F6;
     padding-top: 50px;
-    margin-top: -50px;
+    margin-top: 30px;
 }
 
 .Card {
     width: 28%;
-    height: 330px;
-    margin-bottom: 60px
+    height: 400px;
+    margin-bottom: 80px
 }
 
 .Card img {
@@ -27,4 +27,19 @@
     text-wrap: wrap;
     margin-left: 15px;
     text-shadow: 1px 2px 1px black;
+}
+
+
+@media (max-width: 767.98px) {
+    
+.Card {
+    width: unset;
+    margin-bottom: 20px;
+}
+
+.Gallery {
+    display: block;
+    background-color: unset;
+    margin-top: 0;
+}
 }

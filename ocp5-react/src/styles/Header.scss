@@ -21,3 +21,12 @@ nav a {
 .active {
     text-decoration: underline;
 }
+
+
+@media (max-width: 767.98px) {
+nav {
+    margin-top: 25px;
+    gap: 25px;
+}
+
+}

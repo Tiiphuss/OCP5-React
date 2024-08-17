@@ -1,9 +1,10 @@
 function Banner({ title, src, classname}) {
 	return  <>
-		<div>
+		<div className="accueil">
 		<img className={classname} src={src} alt={title}></img>
-		</div>
 		<h1 className='titreAccueil'>{title}</h1>
+		</div>
+		
 		</>	
 }
 

@@ -17,7 +17,8 @@ root.render(
             <Route path="/" element={<Accueil />} />
             <Route path="/apropos" element={<APropos />} />
             <Route path="/fichelogement/:id" element={<FicheLogement />} />
-            <Route path="*" element={<E404 />} />
+            <Route path="*" element={<E404 />} replace />
+            <Route path="/fichelogement/*" element={<E404 />} replace />
         </Routes>  
     </Router>
     <Footer />

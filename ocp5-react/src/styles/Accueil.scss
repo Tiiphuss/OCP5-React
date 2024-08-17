@@ -15,12 +15,10 @@ main {
 }
 
 .titreAccueil {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    position: absolute;
     color: white;
-    bottom: 170px;
-    font: 200% $font-stack;
+    bottom: 25%;
+    left: 30%;
     text-shadow: 0px 2px 2px black;
     font-size: xxx-large;
 }
@@ -28,4 +26,28 @@ main {
 .divAccueil {
     display: flex;
     justify-content: center;
+}
+
+.accueil {
+    position: relative;
+}
+
+
+
+@media (max-width: 767.98px) {
+
+.titreAccueil {
+    font-size: 30px;
+    left: 0;
+    bottom: 15%;
+    margin-left: 10px;
+    width: 285px;
+}
+    
+.imageAccueil {
+    height: 150px;
+}
+    
+
+
 }

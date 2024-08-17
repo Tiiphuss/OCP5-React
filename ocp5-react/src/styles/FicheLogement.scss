@@ -22,7 +22,7 @@ main {
 
 .locationLogement {
     font-weight: 600;
-    margin-top: -25px;
+    margin-top: -15px;
 }
 
 .presentation {
@@ -32,6 +32,7 @@ main {
 
 .infosHote {
     display: flex;
+    margin-left: 91%;
 }
 
 .imgHote {
@@ -79,4 +80,100 @@ main {
     gap: 5px;
     height: 25px;
     margin-top: 16px;
+}
+
+.englobeur {
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+@media (max-width: 767.98px) {
+
+.photo {
+    height: 400px;
+}
+
+.numero {
+    display: none;
+}
+
+.flecheGauche {
+    bottom: 45%;
+}
+
+.flecheGauche img {
+    width: 20px;
+}
+
+.flecheDroite {
+    bottom: 45%;
+}
+
+.flecheDroite img {
+    width: 20px;
+}
+
+.tagsRatings {
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.ratings {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.locationLogement {
+    margin-top: -10px;
+}
+
+.collapses {
+    flex-direction: column;
+}
+
+.collapseDescription {
+    width: unset;
+}
+
+.collapseEquipements {
+    width: unset;
+}
+
+.infosHote {
+    margin-top: 53px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.nomHote {
+    width: 50px;
+    font-size: small;
+    margin-top: 23px;
+    
+}
+
+.imgHote {
+    height: 40px;
+}
+
+.tag {
+    font-size: medium;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.englobeur {
+    position: relative;
+}
+
+.titreLogement {
+    font-size: x-large;
+}
+
+
 }
