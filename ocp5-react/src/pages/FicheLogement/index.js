@@ -5,7 +5,6 @@ import { Logements } from "../../datas/logements.js"
 import EtoilePleine from "../../assets/EtoilePleine.png"
 import EtoileVide from "../../assets/EtoileVide.png"
 import "../../styles/FicheLogement.scss"
-import { Navigate } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import { useEffect } from "react"
 
@@ -19,30 +18,30 @@ function FicheLogement() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (currentLogement === undefined) {navigate("/apropos")}
+        if (currentLogement === undefined) {navigate("/404")}
     })
     
     
     const equip = 
-    currentLogement.equipments.map((equipement) =>
+    currentLogement?.equipments.map((equipement) =>
         <li key={equipement}>{equipement}</li>
     );
 
     const tags = 
-    currentLogement.tags.map((tag) =>
+    currentLogement?.tags.map((tag) =>
         <p key={tag} className="tag">{tag}</p>
     );
 
     const range =[1,2,3,4,5]
-    const rating = currentLogement.rating
+    const rating = currentLogement?.rating
 
     const logementRating = 
     range.map((chiffre) =>
         rating >= chiffre ? <img key={chiffre} className="etoile" src={EtoilePleine} alt="Etoile Pleine"/> 
         : <img key={chiffre} className="etoile" src={EtoileVide} alt="Etoile Vide"/>
-)
+    );
     
-
+if (currentLogement === undefined) {return <p>Loading</p>}
 
     return(
         <>
