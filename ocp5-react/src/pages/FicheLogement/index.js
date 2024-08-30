@@ -12,9 +12,7 @@ function FicheLogement() {
     
     const {id} = useParams();
     const currentLogement = Logements.find((logement) => logement.id === id);
-
-    console.log(id);
-    console.log(currentLogement);   
+ 
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -24,7 +22,7 @@ function FicheLogement() {
     
     const equip = 
     currentLogement?.equipments.map((equipement) =>
-        <li key={equipement}>{equipement}</li>
+        <ul key={equipement}>{equipement}</ul>
     );
 
     const tags = 
