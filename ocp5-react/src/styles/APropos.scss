@@ -3,7 +3,7 @@
     height: 220px;
     filter: brightness(70%);
     object-fit: cover;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
 .collapsesApropos {
@@ -15,6 +15,10 @@
 
 
 @media (max-width: 767.98px) {
+
+main {
+    padding: 30px;
+}    
 
 .collapsesApropos {
     margin-top: 20px;

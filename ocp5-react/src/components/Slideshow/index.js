@@ -24,7 +24,7 @@ function Slideshow({imgLogement}) {
         </div>
     ) : (
         <div className="slideshow">
-        <img src={imgLogement[currentSlide]} alt="slideshow images"/>
+        <img className="photo" src={imgLogement[currentSlide]} alt="slideshow images"/>
         </div>
         )
 }
